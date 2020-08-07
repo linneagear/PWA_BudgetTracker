@@ -9,8 +9,10 @@ const config = {
         // name of generated manifest file
         filename: "bundle.js"
     },
+
     // set mode to production
     mode: "production",
+    
     plugins: [
         // add our webpack manifest plugin
         new WebpackPwaManifest({

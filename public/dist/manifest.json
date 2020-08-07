@@ -18,6 +18,5 @@
   "start_url": "/",
   "description": "An application for tracking budgets",
   "background_color": "#01579b",
-  "theme_color": "#ffffff",
-  "theme-color": "#ffffff"
+  "theme_color": "#ffffff"
 }
