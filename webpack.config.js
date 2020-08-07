@@ -9,13 +9,16 @@ const config = {
         // name of generated manifest file
         filename: "bundle.js"
     },
+    // set mode to production
     mode: "production",
     plugins: [
         // add our webpack manifest plugin
         new WebpackPwaManifest({
+
             // set fingerprints to `false` to make the names of the generated
             // files predictable making it easier to refer to them in our code
             fingerprints: false,
+
             // we aren't using webpack to generate our html so we set inject to false
             inject: false,
 
@@ -24,7 +27,6 @@ const config = {
             description: "An application for tracking budgets",
             background_color: "#01579b",
             theme_color: "#ffffff",
-            "theme-color": "#ffffff",
             start_url: "/",
             icons: [
                 {
