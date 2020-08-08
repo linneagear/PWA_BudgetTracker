@@ -28,7 +28,7 @@ SO THAT my account balance is accurate when I am traveling
 To use this application, run `npm install` once cloned to gather all dependencies. 
 Then in the terminal, type `npm start` to start the app. Should link you to localhost:3000, or whichever port that has been chosen
 
-Deployed link is [here]().
+Deployed link is [here](https://aqueous-thicket-75974.herokuapp.com/).
 
 To use offline access, user can enter transactions like normal, but entries are added to the pending IndexedDB transaction database. The service worker is still running and activated which allows for this offline access.
 
