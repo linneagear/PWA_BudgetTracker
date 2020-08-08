@@ -1,14 +1,10 @@
-# Unit 18 PWA Homework: Online/Offline Budget Trackers
-
-make sure to clear site data storage. 
-Go offline and it should be in service workers WORKING even though it’s offline!!! 
-Has a manifest, caches storage. when refreshed, it should still load. 
-May need to refresh a couple times. 
-Has an indexDB with pending transations. Then when back online, indexDB pending goes away. Data-cache-v1 is now updated with those that WERE pending.
+# Online/Offline Budget Tracker
 
 ## Description
 
-Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
+Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
+
+This app adds functionality to our existing Budget Tracker application to allow for offline access and functionality.
 
 The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
 
@@ -27,22 +23,23 @@ AS AN avid traveller
 I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
 SO THAT my account balance is accurate when I am traveling
 
-## Business Context
+## Usage
 
-Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
+To use this application, run `npm install` once cloned to gather all dependencies. 
+Then in the terminal, type `npm start` to start the app. Should link you to localhost:3000, or whichever port that has been chosen
 
+Deployed link is [here]().
 
-## Acceptance Criteria
-GIVEN a user is on Budget App without an internet connection
-WHEN the user inputs a withdrawal or deposit
-THEN that will be shown on the page, and added to their transaction history when their connection is back online.
+To use offline access, user can enter transactions like normal, but entries are added to the pending IndexedDB transaction database. The service worker is still running and activated which allows for this offline access.
 
-- - -
+![IndexedDB](/public/assets/images/offline.JPG)
 
-## Submission on BCS
+Once back online, those pending transactions are added to user's saved data.
 
-* You are required to submit the following:
+![updated](/public/assets/images/updated.JPG)
 
-  * the URL to the deployed application
+User may have to refresh a couple times to see these changes.
 
-  * the URL to the Github repository
+## Issues
+
+I tried using webpack.config.json, babel, and adding a bundle file but was unsuccessful. In the future I'd like to come back to this homework and redo but with those added features.
