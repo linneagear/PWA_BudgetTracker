@@ -22,7 +22,7 @@ mongoose.connect("mongodb://user:password1@ds245250.mlab.com:45250/heroku_1g5dl1
 });
 
 // routes
-app.use(require("./routes/api.js"));
+app.use(require("api.js"));
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
