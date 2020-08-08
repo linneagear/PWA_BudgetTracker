@@ -1,4 +1,3 @@
-// create our indexDB by referencing saveRecord from index.js
 let db;
 // create a new db request for a "transaction" database.
 const request = indexedDB.open("transaction", 1);

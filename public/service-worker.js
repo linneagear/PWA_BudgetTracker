@@ -4,7 +4,7 @@ const FILES_TO_CACHE = [
     "/index.html",
     "/assets/css/styles.css",
     "/dist/bundle.js",
-    "/dist/manifest.json",
+    // "/dist/manifest.json",
     "/assets/js/index.js"
 ]
 

@@ -5,13 +5,11 @@ const path = require("path");
 const config = {
     entry: "./public/assets/js/index.js",
     output: {
-        path: __dirname + "/public/dist",
-        // name of generated manifest file
-        filename: "bundle.js"
-    },
+    path: __dirname + "/public/dist",
+    filename: "bundle.js"
+  },
 
-    // set mode to production
-    mode: "production",
+    mode: "development",
     
     plugins: [
         // add our webpack manifest plugin
@@ -19,10 +17,10 @@ const config = {
 
             // set fingerprints to `false` to make the names of the generated
             // files predictable making it easier to refer to them in our code
-            fingerprints: false,
+            // fingerprints: false,
 
-            // we aren't using webpack to generate our html so we set inject to false
-            inject: false,
+            // // we aren't using webpack to generate our html so we set inject to false
+            // inject: false,
 
             name: "Budget Tracker",
             short_name: "Budget Tracker",
