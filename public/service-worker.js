@@ -3,15 +3,16 @@ const FILES_TO_CACHE = [
     "/",
     "/index.html",
     "/assets/css/styles.css",
-    "/dist/bundle.js",
-    // "/dist/manifest.json",
-    "/assets/js/index.js"
+    "/assets/js/index.js",
+    "/assets/js/db.js",
+    "/assets/icons/icon-192x192.png",
+    "/assets/icons/icon-512x512.png",
+    "https://cdn.jsdelivr.net/npm/chart.js@2.8.0"
 ]
 
 const STATIC_CACHE = "static-cache-v1";
 const RUNTIME_CACHE = "runtime-cache";
 
-// used boilerplate code from previous activity:
 self.addEventListener("install", event => {
   event.waitUntil(
     caches
@@ -55,7 +56,7 @@ self.addEventListener("fetch", event => {
   }
 
   // handle runtime GET requests for data from /api routes
-  if (event.request.url.includes("/api/transaction")) {
+  if (event.request.url.includes("/api/images")) {
     // make network request and fallback to cache if network request fails (offline)
     event.respondWith(
       caches.open(RUNTIME_CACHE).then(cache => {
