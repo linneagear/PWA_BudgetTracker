@@ -21,12 +21,12 @@ When brought back online:
 ## User Story
 AS AN avid traveller
 I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
-SO THAT my account balance is accurate when I am traveling
+SO THAT my account balance is accurate when I am traveling.
 
 ## Usage
 
 To use this application, run `npm install` once cloned to gather all dependencies. 
-Then in the terminal, type `npm start` to start the app. Should link you to localhost:3000, or whichever port that has been chosen
+Then in the terminal, type `npm start` to start the app. Should link you to localhost:3000, or whichever port that has been chosen.
 
 Deployed link is [here](https://aqueous-thicket-75974.herokuapp.com/).
 
